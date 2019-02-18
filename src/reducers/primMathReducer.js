@@ -8,13 +8,16 @@ const primMathReducer = (state = initState, action) =>{
     switch (action.type){
         case ADD:
             state = {
-                ...state
+                ...state,
+                result:state.result+1
             }
             break;
 
         case SUB:
             state = {
-                ...state
+                ...state,
+                result:state.result-1
+
             }
             break;
 

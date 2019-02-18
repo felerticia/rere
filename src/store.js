@@ -8,6 +8,8 @@ export default () => {
   return createStore(
     rootReducer,
     {},
-    composeWithDevTools(applyMiddleware(logger, thunk))
+    composeWithDevTools(
+      applyMiddleware(logger, thunk)
+    )
   );
 };
