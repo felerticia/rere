@@ -1,4 +1,4 @@
-import {ADD,SUB} from '../consts'
+import {ADD,SUB} from '../actions/consts'
 
 const initState = {
     result : 0
@@ -8,15 +8,13 @@ const primMathReducer = (state = initState, action) =>{
     switch (action.type){
         case ADD:
             state = {
-                ...state,
-                result: result+1
+                ...state
             }
             break;
 
         case SUB:
             state = {
-                ...state,
-                result: result-1
+                ...state
             }
             break;
 

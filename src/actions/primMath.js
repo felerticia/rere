@@ -1,4 +1,4 @@
-import {ADD,SUB} from '../consts'
+import {ADD,SUB} from './consts'
 
 export const add = (val) => {
     return {
